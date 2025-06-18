@@ -1,19 +1,193 @@
 <!DOCTYPE html>
-        </body>
-    </html>
-    <html>
-        <body>
-            <h1>URUS S</h1>
-            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptsAWONrA428fCu2TmIR5AUEOgfj15S20zg&s">
-            <p><h2>Engine</h2>
-                <br>Engine: 4.0L twin-turbocharged V8
-                <br>Power: 657 hp @ 6,000 rp
-                <br>Torque: 627 lb-ft @ 4,500 rpm
-                <br>Transmission: 8-speed automatic
-                <br>0–100 km/h (0–62 mph): 3.6 seconds
-                <br>Top Speed: 306 km/h (190 mph)
-                <br>Fuel Economy: 14 mpg city / 19 mpg high
-                </p>
-                <a href = "HOME.html"> HOME </a>
-        </body>
-    </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lamborghini Models</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csslab.css">
+  <style>
+    body {
+      background-image: url('https://www.wallpaperflare.com/static/715/94/480/lamborghini-logo-4k-wallpaper.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: sans-serif;
+      margin: 0;
+      color: white;
+      text-align: center;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+    }
+
+    nav a {
+      color: #ffcc00;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    .lead-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 250px;
+      height: 300px;
+      perspective: 1000px;
+      margin: auto;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .flip-card-front {
+      background-color: #fff;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flip-card-front img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .flip-card-back {
+      background-color: #000;
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .flip-card-back h2 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="HOME.html">HOME</a>
+    <a href="URUS.html">LAMBORGHINI MODELS</a>
+    <a href="contactus.html">CONTACTS</a>
+    <a href="developers.html">DEV PAGE</a>
+  </nav>
+
+  <h1>Lamborghini Models</h1>
+
+  <div class="lead-container">
+
+    <!-- URUS S -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptsAWONrA428fCu2TmIR5AUEOgfj15S20zg&s" alt="Urus S">
+        </div>
+        <div class="flip-card-back">
+          <h2>Urus S</h2>
+          <p>4.0L twin-turbocharged V8</p>
+          <p>657 hp @ 6,000 rpm</p>
+          <p>0–100 km/h: 3.6 sec</p>
+          <p>Top Speed: 306 km/h</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aventador -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://www.secret-classics.com/wp-content/uploads/2020/09/lamborghini-aventador-svj-09.jpg" alt="Aventador">
+        </div>
+        <div class="flip-card-back">
+          <h2>Aventador</h2>
+          <p>6.5L V12 engine</p>
+          <p>769 hp @ 8,500 rpm</p>
+          <p>0–100 km/h: 2.8 sec</p>
+          <p>Top Speed: 350 km/h</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Huracán -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://cdn.motor1.com/images/mgl/kNREB/s1/lamborghini-huracan-sto.jpg" alt="Huracan">
+        </div>
+        <div class="flip-card-back">
+          <h2>Huracán EVO</h2>
+          <p>5.2L V10 engine</p>
+          <p>631 hp @ 8,000 rpm</p>
+          <p>0–100 km/h: 2.9 sec</p>
+          <p>Top Speed: 325 km/h</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Revuelto -->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://dealerimages.dealereprocess.com/image/upload/v1695835019/LB744_EXTERIORS_2_.jpg_tr0hky.webp" alt="Revuelto">
+        </div>
+        <div class="flip-card-back">
+          <h2>Revuelto</h2>
+          <p>6.5L V12 Plug-in Hybrid</p>
+          <p>1,001 hp (combined)</p>
+          <p>0–100 km/h: 2.5 sec</p>
+          <p>Top Speed: 350+ km/h</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
