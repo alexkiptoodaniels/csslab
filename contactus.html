@@ -1,33 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
+  <title>Contact Us - Lamborghini</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
   <link rel="stylesheet" href="csslab.css">
+
+  <style>
+    body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqGLA7m1ioFQ1zwHGvmfmCy8-IUIFD_XrB_g&s');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      color: rgb(233, 223, 223);
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav>
     <a href="HOME.html">HOME</a>
     <a href="URUS.html">LAMBORGHINI MODELS</a>
-    <a href="contactus.html">CONTACTS</a>
+    <a href="contactus.html">CONTACTS/LOGIN</a>
     <a href="developers.html">DEV PAGE</a>
   </nav>
 
-  <!-- Header -->
-  <header class="header">
-    <h1>Contact Us</h1>
-  </header>
+  <h1>Contact Us</h1>
 
-  <!-- Contact Information -->
-  <section style="text-align: center; padding: 40px;">
-    <p style="font-size: 18px;">For more information, please reach out to us at:</p>
-    <p style="font-size: 20px; font-weight: bold;"> 123-456-7890</p>
-    <p style="font-size: 18px;"> Email: contact@uruswebsite.com</p>
-    <p style="font-size: 18px;"> Location: Nairobi, Kenya</p>
-  </section>
+  <!-- Contact Form -->
+  <form class="styled-form">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message" required>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <!-- Login Form -->
+  <h2 style="margin-top: 60px;">Login to Your Account</h2>
+  <form class="styled-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Login</button>
+  </form>
 
 </body>
 </html>
